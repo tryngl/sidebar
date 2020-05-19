@@ -1,8 +1,9 @@
 window._genesys = {
     widgets: {
         main: {
-            debug: true,
+            debug: false,
             preload: ['sidebar'],
+            downloadGoogleFont: false
         },
         webchat: {
             transport: {
