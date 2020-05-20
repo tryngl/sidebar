@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TryNGL Sidebar Demo</title>
+  <script>
+    window._genesys = {
+    widgets: {
+        main: {
+            debug: false,
+            preload: ['sidebar'],
+            downloadGoogleFont: false
+        },
+        sidebar: {
+            showOnStartup: true,
+            position: 'right',
+            expandOnHover: false,
+            channels:
+            [
+                {
+                name: 'WebChat',
+                clickCommand: 'WebChat.open', 
+                displayName: 'Chat', 
+                displayTitle: 'Get live help',
+                icon: 'chat'
+                }
+            ]
+        }    
+    }
+};
+  </script>
+  <script src="https://apps.usw2.pure.cloud/widgets/9.0/cxbus.min.js" onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.usw2.pure.cloud/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>
+</head>
+<body>
+
+</body>
+</html>
